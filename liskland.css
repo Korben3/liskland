@@ -1,0 +1,119 @@
+html { 
+  background: url(backgroundDay.jpg);
+  font-size:100%; font-family:'Open-Sans',sans-serif; color: white; 
+  background-color: #0A4505;
+}
+a:link { color: #CCCCCC; text-decoration: none;} a:visited { color: #CCCCCC; text-decoration: none;} a:hover { color: yellow;} a:active { color: grey; }
+#slider  {
+	width: 4000px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+#menuButton{
+	position: fixed;
+	font-size: 18px;
+	left: 50%;
+	margin-left: -5%;
+}
+.menuFull{
+	position: fixed;
+	display: none;
+	top: 36px;
+	left: 50%;
+	margin-left: -37.5%;
+	z-index: 1;
+}
+
+.menuObjects{
+	width: 740px;
+    height: 190px;
+	text-align: center;	
+	display: inline;
+	position: fixed;
+	background-color: #0A4505;
+	border: 2px solid black;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.menuInstructions{
+	width: 370px;
+    height: 170px;
+	left: 743px;
+	position: absolute;
+	text-align: left;	
+	display: inline;
+	padding: 10px;
+	background-color: #0A4505;
+	border: 2px solid black;
+	z-index: 1;
+}
+
+.menuImage{
+	width: 125px;
+	height: 125px;	
+}
+table {
+	padding: 5px;
+}
+th, td {
+    border: 1px solid black;
+    background-color: #DDDDDD;
+	color: black;
+	width: 125px;
+	height: 125px;
+    padding: 5px;
+	margin: 5px;
+    text-align: center;
+	cursor: pointer;
+}
+.liskland{
+	width: 4000px;
+    height: 100%;
+    position: relative;
+    margin: 0px auto;
+	text-align: center;
+}
+
+.objects{
+    position: absolute;
+    width: 25px;
+    height: 25px;	
+}
+
+.objectlrClass{
+    transform: translate(0px,170px); 
+    animation-name: objectlr;
+    animation-duration: 30s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+}
+.objectrlClass{
+    transform: translate(0px,170px); 
+    animation-name: objectrl;
+    animation-duration: 30s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes objectrl { from { right: 0px; } to { right: 4250px; } }
+@keyframes objectlr { from { left: 0px; } to { left: 4000px; } }
+
+ .delegate{
+	position: relative;
+	transform: translate(150px,-20px);
+}
+
+.inline{
+	display: inline;
+}
+
+.footer{
+    left: 0;
+	position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+

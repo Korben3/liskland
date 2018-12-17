@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>liskland - let's build lisk together!</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://js.lisk.io/lisk-client-1.1.2.min.js"></script>
+  <link href="liskland.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<button id="menuButton">MENU</button><br/>
+<div class="menuFull">
+	<div class="menuObjects">
+	<table>
+		<tr>
+			<td><img src="images/house01.png" title="house01" class="menuImage isFixed">house01</td>
+			<td><img src="images/house02.png" title="house02" class="menuImage isFixed">house02</td>
+			<td><img src="images/house03.png" title="house03" class="menuImage isFixed">house03</td>
+			<td><img src="images/castle01.png" title="castle01" class="menuImage isFixed">castle01</td>
+			<td><img src="images/arcade01.png" title="arcade01" class="menuImage isFixed">arcade01</td>
+			<td><img src="images/arena01.png" title="arena01" class="menuImage isFixed">arena01</td>
+			<td><img src="images/tree01.png" title="tree01" class="menuImage isFixed">tree01</td>
+			<td><img src="images/tree02.png" title="tree02" class="menuImage isFixed">tree02</td>
+			<td><img src="images/tree03.png" title="tree03" class="menuImage isFixed">tree03</td>
+			<td><img src="images/tree04.png" title="tree04" class="menuImage isFixed">tree04</td>
+			<td><img src="images/tree05.png" title="tree05" class="menuImage isFixed">tree05</td>
+			<td><img src="images/bike01lr.png" title="bike01" class="menuImage canMove">bike01</td>
+			<td><img src="images/car01lr.png" title="car01" class="menuImage canMove">car01</td>
+			<td><img src="images/car02lr.png" title="car02" class="menuImage canMove">car02</td>
+			<td><img src="images/car03lr.png" title="car03" class="menuImage canMove">car03</td>
+			<td><img src="images/bus01lr.png" title="bus01" class="menuImage canMove">bus01</td>
+			<td><img src="images/phonebooth.png" title="phonebooth" class="menuImage isFixed">phonebooth</td>
+			<td><img src="images/minion.png" title="minion" class="menuImage isFixed">minion</td>
+			<td><img src="images/wizard.png" title="wizard" class="menuImage isFixed">wizard</td>
+			<td><img src="images/lisk.png" title="lisk" class="menuImage isFixed">lisk</td>
+			<td><img src="images/liskland.png" title="liskland" class="menuImage isFixed">liskland</td>
+			<td><img src="images/dino01.png" title="dino01" class="menuImage isFixed">dino01</td>
+			<td><img src="images/robot01.png" title="robot01" class="menuImage isFixed">robot01</td>
+			<td><img src="images/lightpole.png" title="lightpole" class="menuImage isFixed">lightpole</td>
+			</tr>
+	</table>
+	</div>
+	<div id="instructions" class="menuInstructions">
+	1) Click on an object<br/>
+	<div id="objectFixed" style="display:inline;" title="To get the horizontal position, left click on the screen where you would like to place an object.">2) Enter the horizontal position (0-4000) <input style="width:50px;" id="x-pos" value="100" type="number" name="horizontal position" min="0" max="4000"><br/></div>
+	<div id="objectMoving" style="display:none;">2) Select a direction <select name="direction" id="dir"><option value="left">left</option><option value="right">right</option></select><br/></div>
+	3) Send a transaction with reference:<br/><code id="refCode">{"liskland":{"object":"house01","x":100}}</code><br/>to lisk address: <div id="liskAddress" class="inline"></div><br/>
+	<p align="center"><button id="sendButton">Send using Lisk Hub</button></p>
+	<small>testnet - shows objects of last <div id="maxObjects" class="inline"></div> tx's</small>
+	</div>
+</div>
+<div class="liskland">
+</div>
+<div class="footer">
+  <p>Created by lisk delegate <a href="https://explorer.lisk.io/delegate/7851760003822400855L">korben3</a></p>
+</div>
+<script src="liskland.js"></script>
+</body>
+</html>
