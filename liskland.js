@@ -4,7 +4,7 @@
 //config variables
 var network="test"; // main or test
 var maxObjects=25;  // max number of transactions checked for objects 
-var liskAddress="6489267115645386911L"; // lisk address used to receive the transactions
+var liskAddress="112233444L"; // lisk address used to receive the transactions
 
 //setup
 $("#maxObjects").html(maxObjects);
